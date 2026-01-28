@@ -102,9 +102,6 @@ importers:
         specifier: ^5.4.0
         version: 5.7.1
     devDependencies:
-      '@ensdomains/buffer':
-        specifier: ^0.1.1
-        version: 0.1.1
       '@ensdomains/ens-contracts':
         specifier: 1.6.0
         version: 1.6.0(patch_hash=690a84b6dc89077babbf6277c7ba377c4a9b92489488897fc4af09f5e4241aac)(bufferutil@4.0.9)(hardhat@2.24.1(bufferutil@4.0.9)(ts-node@10.9.2(@types/node@22.15.29)(typescript@5.8.3))(typescript@5.8.3)(utf-8-validate@5.0.10))(typescript@5.8.3)(utf-8-validate@5.0.10)
