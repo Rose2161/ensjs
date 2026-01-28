@@ -33,6 +33,11 @@ jobs:
           cache: 'pnpm'
           node-version: 22
 
+      # Ensure latest npm with OIDC support (npm 11.5.1+)
+      - name: Ensure modern npm (OIDC support)
+        shell: bash
+        run: npm install -g npm@11.6
+
       - name: Install dependencies
         run: pnpm install
 
