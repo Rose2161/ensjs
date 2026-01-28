@@ -104,7 +104,8 @@ describe('getRecords()', () => {
 
   it('works with records/resolvers that throw non-null errors', async () => {
     const result = await getRecords(mainnetPublicClient, {
-      name: 'v1rtl.site',
+      // TODO: switch to stateless-offchain-import.com once setup
+      name: 'taytems.xyz',
       texts: ['description', 'url'],
       coins: ['60', 'etcLegacy', '0'],
     })
@@ -114,7 +115,7 @@ describe('getRecords()', () => {
           {
             "id": 60,
             "name": "eth",
-            "value": "0xD3B282e9880cDcB1142830731cD83f7ac0e1043f",
+            "value": "0x8e8Db5CcEF88cca9d624701Db544989C996E3216",
           },
         ],
         "resolverAddress": "0xF142B308cF687d4358410a4cB885513b30A42025",
