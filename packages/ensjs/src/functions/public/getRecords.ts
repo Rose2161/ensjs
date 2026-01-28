@@ -419,11 +419,11 @@ const decode = async <
       abi: multicallSnippet,
       data: result[0],
     }).map((r, i) => {
-      if (r === '0x') {
+      if (r === '0x' || (r.length - 2) % 64 !== 0) {
         calls[i] = null
         return null
       }
-      return (r.length - 2) % 64 === 0 ? r : null
+      return r
     })
   }
 
