@@ -1,5 +1,11 @@
 # @ensdomains/ensjs-react
 
+## 0.0.6
+
+### Patch Changes
+
+- Fixed broken versioning
+
 ## 0.0.5
 
 ### Patch Changes
