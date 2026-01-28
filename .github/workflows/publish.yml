@@ -40,11 +40,6 @@ jobs:
       - name: Build Packages
         run: pnpm -r build
 
-      - name: Fix npmrc
-        run: npm config set "//registry.npmjs.org/:_authToken" "$NPM_TOKEN"
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
@@ -56,6 +51,4 @@ jobs:
           title: "[ci] release"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Needs access to publish to npm
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_CONFIG_PROVENANCE: true

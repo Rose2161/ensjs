@@ -10,7 +10,7 @@
     "chgset:version": "changeset version && pnpm install",
     "chgset:version:prerelease": "changeset pre enter next && pnpm chgset:version",
     "chgset:run": "changeset",
-    "release": "pnpm publish -r --access public && changeset tag",
+    "release": "NPM_CONFIG_PROVENANCE=true pnpm publish -r --access public && changeset tag",
     "chgset": "pnpm chgset:run && pnpm chgset:version",
     "lint": "biome check"
   },
